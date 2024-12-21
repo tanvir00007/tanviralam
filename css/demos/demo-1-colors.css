@@ -276,3 +276,7 @@ body {
     background-color: #50a3a2;
     color: #646464
 }
+.responsive {
+  width: 100%;
+  height: auto;
+}
