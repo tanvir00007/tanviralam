@@ -2997,3 +2997,13 @@ p.no-comments {
 .typed-cursor {
     display: none !important
 }
+
+@media (max-width: 600px) {
+    .header .top-menu ul li a .link {
+        display: none;
+    }
+
+    .header .top-menu ul li a {
+        padding: 10px 0;
+    }
+}
