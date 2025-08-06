@@ -16,53 +16,168 @@
     <link rel="stylesheet" href="css/demos/demo-1-colors.css" />
 </head>
 <body>
-    <div class="background gradient">
-        <ul class="bg-bubbles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
-    <div class="container opened">
-        <header class="header">
-            <div class="profile">
-                <div class="title">Md. Tanvir Alam Sifat</div>
+    <div class="page new-skin">
+
+        <!-- preloader -->
+        <div class="preloader">
+            <div class="centrize full-width">
+                <div class="vertical-center">
+                    <div class="spinner">
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                    </div>
+                </div>
             </div>
-            <div class="top-menu">
-                <ul>
-                    <li class="active">
-                        <a href="index.html">
-                            <span class="icon ion-android-home"></span>
-                            <span class="link">Home</span>
-                        </a>
-                    </li>
-                </ul>
+        </div>
+
+        <!-- background -->
+        <div class="background gradient">
+            <ul class="bg-bubbles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <!-- Container -->
+        <div class="container opened" data-animation-in="fadeInLeft" data-animation-out="fadeOutLeft">
+
+            <header class="header">
+                <div class="profile">
+                    <div class="title">Md. Tanvir Alam Sifat</div>
+                    <div class="subtitle subtitle-typed">
+                        <div class="typing-title">
+                            <p>Solution Architect</p>
+                            <p>Product Developer</p>
+                            <p>Project Manager</p>
+                            <p>Software Engineer</p>
+                            <p>Business Analyst</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- menu btn -->
+                <a href="#" class="menu-btn"><span></span></a>
+
+                <!-- menu -->
+                <div class="top-menu">
+                    <ul>
+                        <li>
+                            <a href="index.html#about-card">
+                                <span class="icon ion-person"></span>
+                                <span class="link">About</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#resume-card">
+                                <span class="icon ion-android-list"></span>
+                                <span class="link">Resume</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#works-card">
+                                <span class="icon ion-paintbrush"></span>
+                                <span class="link">Works</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="projects.html">
+                                <span class="icon ion-code-working"></span>
+                                <span class="link">Projects</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="publications.html">
+                                <span class="icon ion-document-text"></span>
+                                <span class="link">Publications</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="awards.html">
+                                <span class="icon ion-ribbon-a"></span>
+                                <span class="link">Awards</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="leadership.html">
+                                <span class="icon ion-person-stalker"></span>
+                                <span class="link">Leadership</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="certifications.html">
+                                <span class="icon ion-ribbon-b"></span>
+                                <span class="link">Certifications</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#blog-card">
+                                <span class="icon ion-chatbox-working"></span>
+                                <span class="link">Blog</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#contacts-card">
+                                <span class="icon ion-at"></span>
+                                <span class="link">Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+
+            <!-- Card - Started -->
+            <div class="card-started" id="home-card">
+                <div class="profile no-photo">
+                    <div class="slide" style="background-image: url(images/man5_big.jpg);"></div>
+                    <div class="title">Md. Tanvir Alam Sifat</div>
+                    <div class="subtitle subtitle-typed">
+                        <div class="typing-title">
+                            <p>Solution Architect</p>
+                            <p>Product Developer</p>
+                            <p>Project Manager</p>
+                            <p>Software Engineer</p>
+                            <p>Business Analyst</p>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <a target="_blank" href="https://www.linkedin.com/in/md-tanvir-alam-sifat/"><span class="fa fa-linkedin"></span></a>
+                        <a target="_blank" href="mailto:tanviralam0047@gmail.com"><span class="fa fa-envelope"></span></a>
+                        <a target="_blank" href="tel:+8801726042222"><span class="fa fa-phone"></span></a>
+                    </div>
+                    <div class="lnks">
+                        <a href="#" class="lnk"><span class="text">Download CV</span></a>
+                        <a href="#" class="lnk discover"><span class="text">Contact Me</span></a>
+                    </div>
+                </div>
             </div>
-        </header>
-        <div class="card-inner animated active" id="awards-card">
-            <div class="card-wrap">
-                <div class="content">
-                    <div class="title">Awards &amp; Honors</div>
-                    <div class="row">
-                        <div class="col col-d-12 col-t-12 col-m-12 border-line-v">
-                            <div class="text-box">
-                                <ul class="list-style">
-                                    <li>Nominated for High Potential Leadership Journey, BRAC (2025)</li>
-                                    <li>Best Contributor Award, BRAC Microfinance Technology (2021, 2022 &amp; 2023)</li>
-                                    <li>Loyal Knight Award, Digicon Technologies Ltd. (2019)</li>
-                                </ul>
+
+            <div class="card-inner animated active" id="awards-card">
+                <div class="card-wrap">
+                    <div class="content">
+                        <div class="title">Awards &amp; Honors</div>
+                        <div class="row">
+                            <div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+                                <div class="text-box">
+                                    <ul class="list-style">
+                                        <li>Nominated for High Potential Leadership Journey, BRAC (2025)</li>
+                                        <li>Best Contributor Award, BRAC Microfinance Technology (2021, 2022 &amp; 2023)</li>
+                                        <li>Loyal Knight Award, Digicon Technologies Ltd. (2019)</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
     <script src="js/jquery.min.js"></script>
@@ -73,6 +188,7 @@
     <script src="js/jquery.slimscroll.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/typed.js"></script>
+    <script src="https://use.fontawesome.com/8da76d029b.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>
