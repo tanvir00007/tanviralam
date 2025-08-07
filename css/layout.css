@@ -290,11 +290,13 @@
     }
     .header .top-menu ul {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-around;
         width: 100%;
     }
     .header .top-menu ul li {
-        width: 100%;
+        flex: 1 1 auto;
+        width: auto;
     }
     .header .top-menu ul li a {
         padding: 10px 0;
