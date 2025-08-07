@@ -2804,3 +2804,21 @@ a.next.page-numbers:hover {
         padding-top: 118px;
     }
 }
+
+/* display top menu in two vertical columns */
+.header .top-menu ul {
+    column-count: 2;
+    column-gap: 20px;
+    display: block;
+}
+
+.header .top-menu ul li {
+    break-inside: avoid;
+}
+
+/* collapse menu to a single column on small screens */
+@media (max-width: 560px) {
+    .header .top-menu ul {
+        column-count: 1;
+    }
+}
