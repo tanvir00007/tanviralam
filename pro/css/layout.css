@@ -2998,3 +2998,27 @@ p.no-comments {
 .typed-cursor {
     display: none !important
 }
+
+/* display menu in two vertical columns */
+.header .top-menu ul {
+    column-count: 2;
+    column-gap: 20px;
+    display: block;
+}
+
+.header .top-menu ul li {
+    break-inside: avoid;
+}
+
+/* collapse menu into a single column on small screens */
+@media (max-width: 600px) {
+    .header .top-menu ul {
+        column-count: 1;
+    }
+    .header .top-menu ul li a .link {
+        display: none;
+    }
+    .header .top-menu ul li a {
+        padding: 10px 0;
+    }
+}

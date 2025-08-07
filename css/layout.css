@@ -2999,27 +2999,25 @@ p.no-comments {
     display: none !important
 }
 
-/* allow menu to wrap into two lines */
+/* display menu in two vertical columns */
 .header .top-menu ul {
-    display: flex;
-    flex-wrap: wrap;
-}
-@media (min-width:1024px) {
-    .header .top-menu ul li {
-        width: 50%;
-    }
-}
-@media (max-width:1023px) {
-    .header .top-menu ul li {
-        width: 20%;
-    }
+    column-count: 2;
+    column-gap: 20px;
+    display: block;
 }
 
+.header .top-menu ul li {
+    break-inside: avoid;
+}
+
+/* collapse menu into a single column on small screens */
 @media (max-width: 600px) {
+    .header .top-menu ul {
+        column-count: 1;
+    }
     .header .top-menu ul li a .link {
         display: none;
     }
-
     .header .top-menu ul li a {
         padding: 10px 0;
     }
