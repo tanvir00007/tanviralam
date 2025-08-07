@@ -2998,6 +2998,22 @@ p.no-comments {
     display: none !important
 }
 
+/* allow menu to wrap into two lines */
+.header .top-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (min-width:1024px) {
+    .header .top-menu ul li {
+        width: 50%;
+    }
+}
+@media (max-width:1023px) {
+    .header .top-menu ul li {
+        width: 20%;
+    }
+}
+
 @media (max-width: 600px) {
     .header .top-menu ul li a .link {
         display: none;
