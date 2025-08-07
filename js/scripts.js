@@ -616,6 +616,12 @@ $(function() {
         }
     });
 
+    /* Mobile menu toggle */
+    $('#mobile-menu-toggle').on('click', function(e) {
+        e.preventDefault();
+        $('.top-menu').toggleClass('open');
+    });
+
 });
 
 
