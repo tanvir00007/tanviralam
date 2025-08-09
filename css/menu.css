@@ -1,8 +1,9 @@
 /* Responsive navigation and layout */
 
-/* base styles */
+/* base mobile styles (≤767px) */
 .nav-grid {
-  margin: 20px 0;
+  margin: 0 16px 16px;
+  padding: 16px;
 }
 
 .nav-grid ul {
@@ -10,7 +11,7 @@
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   row-gap: 12px;
   column-gap: 12px;
   justify-items: center;
@@ -18,15 +19,32 @@
 
 .nav-grid li {
   min-width: 0;
+  text-align: center;
 }
 
 .nav-grid a {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 6px;
+  justify-content: center;
+  gap: 4px;
+  min-width: 44px;
+  min-height: 44px;
   text-decoration: none;
   overflow-wrap: anywhere;
   white-space: normal;
+  color: inherit;
+  border-radius: 8px;
+}
+
+.nav-grid li a:hover,
+.nav-grid li a:focus {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.nav-grid li.active a {
+  background: rgba(0, 0, 0, 0.2);
+  font-weight: 600;
 }
 
 .nav-grid a:focus-visible {
@@ -34,26 +52,33 @@
   outline-offset: 2px;
 }
 
-/* tablet */
+/* tablet (768–1199px) */
 @media (min-width: 768px) and (max-width: 1199px) {
+  .nav-grid {
+    margin: 0 0 24px;
+    padding: 24px;
+  }
+
   .nav-grid ul {
     grid-template-columns: repeat(4, 1fr);
     row-gap: 16px;
-    column-gap: 20px;
+    column-gap: 16px;
   }
 }
 
-/* desktop */
+/* desktop (≥1200px) */
 @media (min-width: 1200px) {
   .layout {
     display: grid;
-    grid-template-columns: 240px 1fr;
+    grid-template-columns: 280px 1fr;
     column-gap: 40px;
     align-items: flex-start;
   }
 
   .nav-grid {
+    width: 280px;
     margin: 0;
+    padding: 32px;
     position: sticky;
     top: 0;
     align-self: start;
@@ -61,8 +86,7 @@
 
   .nav-grid ul {
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 16px;
-    column-gap: 20px;
+    row-gap: 32px;
+    column-gap: 24px;
   }
 }
-
